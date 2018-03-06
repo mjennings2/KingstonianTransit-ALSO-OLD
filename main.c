@@ -154,6 +154,12 @@ int main() {
         }
     }
     for(i = 0; i < 4; i++) {
+        float extensionTime = extensions[i] * MAX_EXTE;
+        float truncationTime = extensions[i] * MAX_TRUNC;
+
+    }
+
+    for(i = 0; i < 4; i++) {
         printf("%f\n", percentExtend[i] + percentGreen[i] + percentRed[i]);
     }
     // Output

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Mathew/CLionProjects/KingstonianTransit/main.c
+C:/Users/Mathew/CLionProjects/KingstonianTransit/KingstonianTransit/main.c
 stdio.h
 -
 time.h
