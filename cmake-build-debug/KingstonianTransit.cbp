@@ -8,6 +8,7 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
+<<<<<<< HEAD
 				<Option working_dir="C:/Users/Mathew/CLionProjects/KingstonianTransit/KingstonianTransit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -20,10 +21,25 @@
 			<Target title="KingstonianTransit">
 				<Option output="C:/Users/Mathew/CLionProjects/KingstonianTransit/KingstonianTransit/cmake-build-debug/KingstonianTransit.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Mathew/CLionProjects/KingstonianTransit/KingstonianTransit/cmake-build-debug"/>
+=======
+				<Option working_dir="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="KingstonianTransit">
+				<Option output="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/KingstonianTransit.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug"/>
+>>>>>>> 2d6ec48ad4120700e144a003625e3ff713b31a4c
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
@@ -41,10 +57,30 @@
 			<Target title="KingstonianTransit/fast">
 				<Option output="C:/Users/Mathew/CLionProjects/KingstonianTransit/KingstonianTransit/cmake-build-debug/KingstonianTransit.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Mathew/CLionProjects/KingstonianTransit/KingstonianTransit/cmake-build-debug"/>
+=======
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 KingstonianTransit"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="KingstonianTransit/fast">
+				<Option output="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/KingstonianTransit.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug"/>
+>>>>>>> 2d6ec48ad4120700e144a003625e3ff713b31a4c
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+<<<<<<< HEAD
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
@@ -84,6 +120,47 @@
 			<Option target="KingstonianTransit"/>
 		</Unit>
 		<Unit filename="C:/Users/Mathew/CLionProjects/KingstonianTransit/KingstonianTransit/CMakeLists.txt">
+=======
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-7.2.0-posix-dwarf-rt_v5-rev1/mingw32/bin/../lib/gcc/i686-w64-mingw32/7.2.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 KingstonianTransit/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-7~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/main.c">
+			<Option target="KingstonianTransit"/>
+		</Unit>
+		<Unit filename="C:/Users/benru/OneDrive/Documents/GitHub/KingstonianTransit/CMakeLists.txt">
+>>>>>>> 2d6ec48ad4120700e144a003625e3ff713b31a4c
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
