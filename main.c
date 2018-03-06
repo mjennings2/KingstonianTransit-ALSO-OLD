@@ -29,10 +29,10 @@ int main() {
     int trafficCount [3][12][4][1];
     int intersections [4] = { };
     int hours [12] = { 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
-    int north [3][12];
-    int south [3][12];
-    int east [3][12];
-    int west [3][12];
+    int north [3][24];
+    int south [3][24];
+    int east [3][24];
+    int west [3][24];
 
 
     // Scan Traffic count and input number of cars in each direction
@@ -166,4 +166,21 @@ int main() {
 
 
 
+// 1tonne of CO2 e = 424L of gasoline or 333L of diesel
+
+
+// 0.72737472 Litres per hour of idling for compact sedan
+// when calculating money saved for city, look at updated gas buddy prices
+// 3.671849 Litres per hour of idling for transit bus
+// 1.476311 Litres per hour of idling for large sedan
+
+
+//compactSudan = 0.0002020485333* timeSavedOther
+//time in seconds
+//largeSudan = 0.0004100863889 * timeSavedOther
+
+//transitBus = 0.001019958056 * timeSavedBus
+//gasTotal = compactSudan + largeSudan
+//dieselTotal = transitTotal
+//coTwoTonnes = ((1/424)*gasTotal) + ((1/333)*dieselTotal)
 
