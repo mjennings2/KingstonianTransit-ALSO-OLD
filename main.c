@@ -2,6 +2,8 @@
 // Created by Mathew on 2/15/2018.
 //yo its ben.
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 // Maximum & Minimum values for truncation and extension (s)
 int MIN_TRUNC = 0;
 int MAX_TRUNC = 5;
@@ -9,10 +11,7 @@ int MIN_EXTE = 0;
 int MAX_EXTE = 15;
 int CHANGE = 1;
 
-
-
-// 4 Directions at an intersections
-int DIRECTIONS = 4;
+int DISTANCE = 150;
 
 int main() {
 
@@ -71,14 +70,15 @@ int main() {
     fscanf(lightFile,"%d",&n);
     printf("%d\n",n);
 
-    int greenTimes [n];
-    int amberTimes [n];
-    int allRedTimes [n];
-    int redTimes [n];
+    float greenTimes [n];
+    float amberTimes [n];
+    float allRedTimes [n];
+    float redTimes [n];
+    float extendGreenTimes [n];
 
     for(i = 0; i < n; i++){
-        fscanf(lightFile, "%d %d %d %d", &greenTimes[i], &amberTimes[i], &allRedTimes[i], &redTimes[i]);
-        printf("%d %d %d %d\n", greenTimes[i], amberTimes[i], allRedTimes[i], redTimes[i]);
+        fscanf(lightFile, "%f %f %f %f", &greenTimes[i], &amberTimes[i], &allRedTimes[i], &redTimes[i]);
+        printf("%f %f %f %f\n", greenTimes[i], amberTimes[i], allRedTimes[i], redTimes[i]);
     }
     fclose(lightFile);
 
@@ -103,33 +103,63 @@ int main() {
 
     // Calculate percent chances
     // given 50 km/h on princess and 20 km/h leaving the Cataraqui center
-    int timeFor150m [4] = {11,11,11,36};
-    int percentGreen [4];
-    int percentExtend [4];
-    int percentRed [4];
+    float speed [4] =  {13.8889, 13.8889, 13.8889, 5.55556};
+    float percentGreen [4];
+    float percentExtend [4];
+    float percentRed [4];
+    int timeFor150m [4];
+    float totalLightTime[4];
 
+    for(int i = 0; i < 4; i++){
+
+        totalLightTime[i] = greenTimes[i] + amberTimes[i] + allRedTimes[i] + redTimes[i];
+
+        extendGreenTimes[i] = DISTANCE / speed[i];
+
+        percentGreen[i] = (greenTimes[i] - extendGreenTimes[i]) / totalLightTime[i];
+        percentExtend[i] = extendGreenTimes[i] / totalLightTime[i];
+        percentRed[i] = (redTimes[i] + amberTimes[i] + allRedTimes[i]) / totalLightTime[i];
+
+
+    }
+
+    srand(time(NULL));
 
     int hour = 0;
     int maxHours = 24;
 
     int j, k;
-    int arrivals [4];
-    int extensions[4];
-    int truncations [4];
-    int greenLights [4];
+    int arrivals [4] = {0, 0, 0, 0};
+    int extensions[4] = {0, 0, 0, 0};
+    int truncations [4] = {0, 0, 0, 0};
+    int greenLights [4] = {0, 0, 0, 0};
     // Simulate bus loop
-    for(hour = 0; hour < maxHours; hour++){
-        for(i = 0; i < busesPerHour[hour]; i++){
+    for(i = 0; i < 4; i++) {
+        for (hour = 0; hour < maxHours; hour++) {
+            for (j = 0; j < busesPerHour[hour]; j++) {
 
+                float r = rand() % 1000;
+                r = r / 1000;
+                printf("%f\n",r);
+
+                if(r <= percentExtend[i]){
+                    extensions[i]++;
+                }else if(r <= (percentExtend[i] + percentRed[i])){
+                    truncations[i]++;
+                }else{
+                    greenLights[i]++;
+                }
+                arrivals[i]++;
+            }
         }
     }
-
+    for(i = 0; i < 4; i++) {
+        printf("%f\n", percentExtend[i] + percentGreen[i] + percentRed[i]);
+    }
     // Output
-    printf("Hello Workd!\n");
-    i = 0;
-    for(i=0; i<3;i++){
-        printf("%d\n",i);
-        //printf("%c",line[i]);
+    for(i = 0; i < 4; i++) {
+        printf("The Final values for Intersection one are:\n %d Arrivals\n %d Extensions\n %d Truncations\n %d greenLights\n",
+               arrivals[i], extensions[i], truncations[i], greenLights[i]);
     }
     //return 0;
 }
